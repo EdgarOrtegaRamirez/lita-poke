@@ -3,10 +3,10 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1.0"
   spec.authors       = ["Edgar Ortega"]
   spec.email         = ["edgarortegaramirez@gmail.com"]
-  spec.description   = "TODO: Add a description"
-  spec.summary       = "TODO: Add a summary"
-  spec.homepage      = "TODO: Add a homepage"
-  spec.license       = "TODO: Add a license"
+  spec.description   = "Lita Pokémon"
+  spec.summary       = "Lita Pokémon"
+  spec.homepage      = "https://gitlab.com/EdgarOrtegaRamirez/lita-poke"
+  spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "lita", ">= 4.7"
+  spec.add_runtime_dependency "pokeapi", ">= 0.1.1"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "pry-byebug"
